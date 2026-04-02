@@ -4,7 +4,7 @@ set -e
 DATE=$(date -I)
 MAINPATH=/nfs/containers
 BCKPPATH=/nfs/containers_backups/containers_$DATE
-LOG=/var/log/sql_backup.log
+LOG=/var/log/containers_bckp.log
 
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" >> $LOG
